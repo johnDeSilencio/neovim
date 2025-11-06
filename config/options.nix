@@ -63,5 +63,12 @@
     swapfile = true;
     backup = false;
     autoread = true;
+
+    #
+    # Scrolling
+    #
+
+    # Start scrolling when the cursor is X lines from the top or bottom
+    scrolloff = 8;
   };
 }
