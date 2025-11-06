@@ -1,15 +1,44 @@
 {
   keymaps = [
     # Neo-tree bindings
+
     {
-      action = "<cmd>Neotree toggle<CR>";
+      action = "<cmd>Neotree toggle<cr>";
       key = "<leader>e";
       options = {
         desc = "Toggle Neotree";
       };
     }
 
+    # Telescope bindings
+
+    {
+      action = "<cmd>Telescope live_grep<cr>";
+      key = "<leader>fw";
+    }
+    {
+      action = "<cmd>Telescope find_files<cr>";
+      key = "<leader>ff";
+    }
+    {
+      action = "<cmd>Telescope git_commits<cr>";
+      key = "<leader>fg";
+    }
+    {
+      action = "<cmd>Telescope oldfiles<cr>";
+      key = "<leader>fh";
+    }
+    {
+      action = "<cmd>Telescope colorscheme<cr>";
+      key = "<leader>ch";
+    }
+    {
+      action = "<cmd>Telescope man_pages<cr>";
+      key = "<leader>fm";
+    }
+
     # BufferLine bindings
+
     {
       mode = "n";
       key = "<Tab>";
@@ -18,7 +47,6 @@
         desc = "Cycle to the next buffer";
       };
     }
-
     {
       mode = "n";
       key = "<S-Tab>";
@@ -27,7 +55,6 @@
         desc = "Cycle to the previous buffer";
       };
     }
-
     {
       mode = "n";
       key = "<S-l>";
@@ -36,7 +63,6 @@
         desc = "Cycle to the next buffer";
       };
     }
-
     {
       mode = "n";
       key = "<S-h>";
@@ -45,7 +71,6 @@
         desc = "Cycle to the previous buffer";
       };
     }
-
     {
       mode = "n";
       key = "<leader>bd";

@@ -6,6 +6,7 @@
     ./plugins/colorscheme.nix
     ./plugins/lualine.nix
     ./plugins/neotree.nix
+    ./plugins/telescope.nix
 
     ./keymappings.nix
     ./options.nix
