@@ -7,6 +7,7 @@
     ./plugins/colorscheme.nix
     ./plugins/conform.nix
     ./plugins/icons.nix
+    ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/neotree.nix
     ./plugins/telescope.nix
