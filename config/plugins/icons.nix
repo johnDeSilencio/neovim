@@ -1,6 +1,6 @@
 {
   plugins = {
-    bufferline = {
+    web-devicons = {
       enable = true;
     };
   };
