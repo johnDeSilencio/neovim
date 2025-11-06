@@ -6,8 +6,14 @@
     # Relative line number gutter
     relativenumber = true;
 
+    # Always show the sign column
+    signcolumn = "yes:3";
+
     # Enable 24-bit RGB color in the TUI
     termguicolors = true;
+
+    # Enable mouse
+    mouse = "a";
 
     #
     # Searching
@@ -30,5 +36,32 @@
     shiftwidth = 4;
     # Pressing the tab key will insert spaces
     expandtab = true;
+
+    #
+    # Clipboard
+    #
+
+    # System clipboard support
+    clipboard = {
+      # Use wl-copy for Wayland and xsel for Xorg
+      providers.wl-copy.enable = true;
+      register = "wl-copy";
+    };
+
+    #
+    # Encoding
+    #
+
+    encoding = "utf-8";
+    fileencoding = "utf-8";
+
+    #
+    # History
+    #
+
+    undofile = true;
+    swapfile = true;
+    backup = false;
+    autoread = true;
   };
 }
