@@ -8,6 +8,7 @@
     ./plugins/lualine.nix
     ./plugins/neotree.nix
     ./plugins/telescope.nix
+    ./plugins/treesitter.nix
 
     ./keymappings.nix
     ./options.nix
