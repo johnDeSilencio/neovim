@@ -36,5 +36,14 @@
         desc = "Cycle to the previous buffer";
       };
     }
+
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<cmd>bdelete<cr>";
+      options = {
+        desc = "Delete the current buffer";
+      };
+    }
   ];
 }
