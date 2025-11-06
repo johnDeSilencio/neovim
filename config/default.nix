@@ -5,6 +5,7 @@
     ./plugins/bufferline.nix
     ./plugins/colorscheme.nix
     ./plugins/lualine.nix
+    ./plugins/neotree.nix
 
     ./keymappings.nix
     ./options.nix

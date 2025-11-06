@@ -1,5 +1,14 @@
 {
   keymaps = [
+    # Neo-tree bindings
+    {
+      action = "<cmd>Neotree toggle<CR>";
+      key = "<leader>e";
+      options = {
+        desc = "Toggle Neotree";
+      };
+    }
+
     # BufferLine bindings
     {
       mode = "n";
