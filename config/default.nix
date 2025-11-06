@@ -1,9 +1,11 @@
 {
   # Import all your configuration modules here
+
   imports = [
     ./plugins/autopairs.nix
     ./plugins/bufferline.nix
     ./plugins/colorscheme.nix
+    ./plugins/conform.nix
     ./plugins/icons.nix
     ./plugins/lualine.nix
     ./plugins/neotree.nix
