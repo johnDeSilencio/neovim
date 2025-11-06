@@ -4,6 +4,7 @@
     ./plugins/bufferline.nix
     ./plugins/colorscheme.nix
 
+    ./keymappings.nix
     ./options.nix
   ];
 }
