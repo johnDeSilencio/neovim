@@ -1,4 +1,7 @@
 {
   # Import all your configuration modules here
-  imports = [ ./bufferline.nix ];
+  imports = [
+    ./plugins/bufferline.nix
+    ./plugins/colorscheme.nix
+  ];
 }
