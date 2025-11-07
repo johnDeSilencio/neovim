@@ -7,6 +7,7 @@
     ./plugins/colorscheme.nix
     ./plugins/comment.nix
     ./plugins/conform.nix
+    ./plugins/crates.nix
     ./plugins/gitsigns.nix
     ./plugins/highlight-colors.nix
     ./plugins/icons.nix
