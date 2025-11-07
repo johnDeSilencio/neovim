@@ -7,7 +7,7 @@
     relativenumber = true;
 
     # Always show the sign column
-    signcolumn = "yes:3";
+    signcolumn = "yes:2";
 
     # Enable 24-bit RGB color in the TUI
     termguicolors = true;
