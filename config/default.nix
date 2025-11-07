@@ -4,6 +4,7 @@
   imports = [
     ./plugins/autopairs.nix
     ./plugins/bufferline.nix
+    ./plugins/cmp/default.nix
     ./plugins/colorscheme.nix
     ./plugins/comment.nix
     ./plugins/conform.nix
