@@ -5,6 +5,7 @@
     ./plugins/autopairs.nix
     ./plugins/bufferline.nix
     ./plugins/colorscheme.nix
+    ./plugins/comment.nix
     ./plugins/conform.nix
     ./plugins/icons.nix
     ./plugins/lsp.nix
