@@ -19,6 +19,8 @@
     # Searching
     #
 
+    # Don't highlight matches
+    hlsearch = false;
     # Ignore case in searches by default
     ignorecase = true;
     # But make searches case-sensitive if uppercase is used
@@ -29,11 +31,11 @@
     #
 
     # A '\t' character looks like 4 spaces
-    tabstop = 4;
+    tabstop = 2;
     # Delete four spaces at a time
-    softtabstop = 4;
+    softtabstop = 2;
     # Number of spaces inserted when indenting
-    shiftwidth = 4;
+    shiftwidth = 2;
     # Pressing the tab key will insert spaces
     expandtab = true;
 

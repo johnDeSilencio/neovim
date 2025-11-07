@@ -9,7 +9,50 @@
       enable = true;
       inlayHints = true;
       servers = {
-        nixd = {
+        # Bash
+        bashls = {
+          enable = true;
+        };
+
+        # CSS
+        cssls = {
+          enable = true;
+        };
+
+        # Docker
+        dockerls = {
+          enable = true;
+        };
+
+        # Golang
+        gopls = {
+          enable = true;
+          autostart = true;
+        };
+
+        # HTML
+        html = {
+          enable = true;
+        };
+
+        # JavaScript / TypeScript
+        ts_ls = {
+          enable = true;
+        };
+
+        # Lua
+        lua_ls = {
+          enable = true;
+          settings.telemetry.enable = false;
+        };
+
+        # Markdown
+        markdown_oxide = {
+          enable = true;
+        };
+
+        # Nix
+        nil_ls = {
           enable = true;
           settings =
             let
@@ -30,6 +73,37 @@
                 nixvim.expr = ''${flakeNixvim}.packages.${pkgs.stdenv.hostPlatform.system}.default.options'';
               };
             };
+        };
+
+        # Rust
+        rust_analyzer = {
+          enable = true;
+          installRustc = false;
+          installCargo = false;
+        };
+
+        # Spell-check
+        harper_ls = {
+          enable = true;
+          settings.settings = {
+            "harper-ls" = {
+              linters = {
+                boring_words = true;
+                linking_verbse = true;
+                # Lots of false positives with code comments
+                sentence_capitalization = false;
+                spell_check = false;
+              };
+              codeActions = {
+                forceStable = true;
+              };
+            };
+          };
+        };
+
+        # TailwindCSS
+        tailwindcss = {
+          enable = true;
         };
       };
 
@@ -96,4 +170,58 @@
         end
     end;
   '';
+
+  extraPackages = with pkgs; [
+    dockerfile-language-server
+
+    # For debugging
+    gdb
+
+    gopls
+    golangci-lint-langserver
+
+    # For grammar and spell checking
+    harper
+
+    # For the Leptos view! {} macro
+    leptosfmt
+
+    lua-language-server
+    markdown-oxide
+
+    # Markdown
+    marksman
+
+    # Nix
+    nil
+
+    nixfmt-rfc-style
+    node2nix
+    nodePackages.vscode-json-languageserver
+    nodePackages.bash-language-server
+
+    # For styling Lua
+    stylua
+
+    tailwindcss-language-server
+
+    # TOML
+    taplo
+
+    # Language server for typst
+    tinymist
+
+    tree-sitter
+
+    # JavaScript and TypeScript
+    typescript-language-server
+    typescript
+
+    # Formatter for typst
+    typstyle
+
+    vscode-langservers-extracted
+    yaml-language-server
+
+  ];
 }
