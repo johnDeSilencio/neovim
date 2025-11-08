@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   ...
 }:
@@ -17,6 +18,15 @@
 
         formatters_by_ft = {
           nix = [ "nixfmt" ];
+          rust = [ "leptosfmt" ];
+          typst = [ "typstyle" ];
+          markdown = [ "dprint" ];
+        };
+
+        formatters = {
+          leptosfmt = {
+            command = lib.getExe' pkgs.leptosfmt "--rustfmt";
+          };
         };
       };
     };
