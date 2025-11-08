@@ -15,7 +15,7 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/neotree.nix
-    ./plugins/startup.nix
+    ./plugins/startup/default.nix
     ./plugins/telescope.nix
     ./plugins/transparent.nix
     ./plugins/treesitter.nix
