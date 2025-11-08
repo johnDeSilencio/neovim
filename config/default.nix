@@ -18,6 +18,7 @@
     ./plugins/telescope.nix
     ./plugins/transparent.nix
     ./plugins/treesitter.nix
+    ./plugins/ts-autotag.nix
 
     ./keymappings.nix
     ./options.nix
