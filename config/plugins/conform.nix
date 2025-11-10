@@ -32,5 +32,10 @@
     };
   };
 
-  extraPackages = with pkgs; [ nixfmt ];
+  extraPackages = with pkgs; [
+    dprint
+    leptosfmt
+    nixfmt
+    typstyle
+  ];
 }
