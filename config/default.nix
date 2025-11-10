@@ -9,6 +9,7 @@
     ./plugins/comment.nix
     ./plugins/conform.nix
     ./plugins/crates.nix
+    ./plugins/dap.nix
     ./plugins/gitsigns.nix
     ./plugins/highlight-colors.nix
     ./plugins/icons.nix
