@@ -23,6 +23,8 @@
     ./plugins/treesitter.nix
     ./plugins/ts-autotag.nix
     ./plugins/which-key.nix
+    ./plugins/zellij.nix
+    ./plugins/zellij-nav.nix
 
     ./keymappings.nix
     ./options.nix
