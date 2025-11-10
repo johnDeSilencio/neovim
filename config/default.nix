@@ -20,6 +20,7 @@
     ./plugins/transparent.nix
     ./plugins/treesitter.nix
     ./plugins/ts-autotag.nix
+    ./plugins/which-key.nix
 
     ./keymappings.nix
     ./options.nix
