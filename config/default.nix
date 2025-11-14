@@ -11,6 +11,7 @@
     ./plugins/crates.nix
     ./plugins/dap.nix
     ./plugins/dap-ui.nix
+    ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/highlight-colors.nix
     ./plugins/icons.nix
