@@ -1,5 +1,5 @@
 {
   colorschemes = {
-    gruvbox.enable = true;
+    melange.enable = true;
   };
 }
