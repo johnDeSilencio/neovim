@@ -6,9 +6,14 @@
       url = "github:NixOS/nixpkgs/nixos-25.05";
     };
 
+    nixpkgs-unstable = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # TODO: Follow stable once Nixvim is fixed on stable
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     flake-parts = {
@@ -34,7 +39,9 @@
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              # inherit (inputs) foo;
+              nixpkgs = import inputs.nixpkgs {
+                inherit system;
+              };
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
