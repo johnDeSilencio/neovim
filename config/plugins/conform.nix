@@ -25,7 +25,11 @@
 
         formatters = {
           leptosfmt = {
-            command = lib.getExe' pkgs.leptosfmt "--rustfmt";
+            command = "leptosfmt";
+            args = [
+              "--stdin"
+              "--rustfmt"
+            ];
           };
         };
       };

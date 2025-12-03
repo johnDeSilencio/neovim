@@ -200,6 +200,9 @@
     nodePackages.vscode-json-languageserver
     nodePackages.bash-language-server
 
+    # For formatting Rust code
+    rustfmt
+
     # For styling Lua
     stylua
 
