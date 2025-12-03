@@ -38,8 +38,21 @@
 
   extraPackages = with pkgs; [
     dprint
+
+    # For the Leptos view! {} macro
     leptosfmt
+
+    # For Nix
     nixfmt
+    nixfmt-rfc-style
+
+    # For formatting Rust code
+    rustfmt
+
+    # For styling Lua
+    stylua
+
+    # Formatter for typst
     typstyle
   ];
 }

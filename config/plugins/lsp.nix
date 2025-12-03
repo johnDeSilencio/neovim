@@ -183,9 +183,6 @@
     # For grammar and spell checking
     harper
 
-    # For the Leptos view! {} macro
-    leptosfmt
-
     lua-language-server
     markdown-oxide
 
@@ -195,17 +192,9 @@
     # Nix
     nil
 
-    nixfmt-rfc-style
     node2nix
     nodePackages.vscode-json-languageserver
     nodePackages.bash-language-server
-
-    # For formatting Rust code
-    rustfmt
-
-    # For styling Lua
-    stylua
-
     tailwindcss-language-server
 
     # TOML
@@ -213,18 +202,13 @@
 
     # Language server for typst
     tinymist
-
     tree-sitter
 
     # JavaScript and TypeScript
     typescript-language-server
     typescript
 
-    # Formatter for typst
-    typstyle
-
     vscode-langservers-extracted
     yaml-language-server
-
   ];
 }
