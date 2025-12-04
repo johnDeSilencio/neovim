@@ -11,8 +11,8 @@
           "<C-p>" = "cmp.mapping.select_prev_item()";
 
           # Scroll the documentation [u]p or [d]own
-          "<C-u>" = "cmp.mapping.scroll_docs(4)";
-          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-u>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-d>" = "cmp.mapping.scroll_docs(4)";
 
           # Exit completion
           "<C-e>" = "cmp.mapping.abort()";
