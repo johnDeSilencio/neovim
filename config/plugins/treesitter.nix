@@ -41,16 +41,16 @@ in
       enable = false;
     };
 
-    treesitter-textobjects = {
-      enable = true;
+    # treesitter-textobjects = {
+    #   enable = true;
 
-      settings = {
-        select = {
-          enable = true;
-          lookahead = true;
-        };
-      };
-    };
+    #   settings = {
+    #     select = {
+    #       enable = true;
+    #       lookahead = true;
+    #     };
+    #   };
+    # };
   };
 
   extraConfigLua = ''
