@@ -44,7 +44,6 @@
 
     # For Nix
     nixfmt
-    nixfmt-rfc-style
 
     # For formatting Rust code
     rustfmt
