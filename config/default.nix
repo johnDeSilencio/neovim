@@ -2,6 +2,8 @@
   # Import all your configuration modules here
 
   imports = [
+    # tree-sitter-rstml.nixvimModule
+
     ./plugins/autopairs.nix
     ./plugins/bufferline.nix
     ./plugins/cmp/default.nix

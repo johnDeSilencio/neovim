@@ -10,6 +10,11 @@
       url = "github:NixOS/nixpkgs/nixos-unstable";
     };
 
+    tree-sitter-rstml = {
+      url = "github:rayliwell/tree-sitter-rstml/flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim";
       # TODO: Follow stable once Nixvim is fixed on stable
