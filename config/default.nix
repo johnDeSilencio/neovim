@@ -15,6 +15,7 @@
     ./plugins/dap-ui.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
+    ./plugins/hardtime.nix
     ./plugins/highlight-colors.nix
     ./plugins/icons.nix
     ./plugins/lsp.nix
