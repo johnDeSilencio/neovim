@@ -21,6 +21,7 @@
           rust = [ "leptosfmt" ];
           typst = [ "typstyle" ];
           markdown = [ "dprint" ];
+          toml = [ "tombi" ];
         };
 
         formatters = {
