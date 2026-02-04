@@ -176,6 +176,9 @@
   '';
 
   extraPackages = with pkgs; [
+    # For watching files and running jobs
+    bacon
+
     dockerfile-language-server
 
     # For debugging
