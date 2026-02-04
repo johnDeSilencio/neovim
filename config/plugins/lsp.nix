@@ -105,6 +105,10 @@
         tailwindcss = {
           enable = true;
         };
+
+        tombi = {
+          enable = true;
+        };
       };
 
       keymaps = {
@@ -196,9 +200,6 @@
     nodePackages.vscode-json-languageserver
     nodePackages.bash-language-server
     tailwindcss-language-server
-
-    # TOML
-    taplo
 
     # Language server for typst
     tinymist
