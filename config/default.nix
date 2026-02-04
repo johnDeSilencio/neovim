@@ -5,6 +5,7 @@
     # tree-sitter-rstml.nixvimModule
 
     ./plugins/autopairs.nix
+    ./plugins/bacon.nix
     ./plugins/bufferline.nix
     ./plugins/cmp/default.nix
     ./plugins/colorscheme.nix
