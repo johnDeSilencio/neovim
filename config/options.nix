@@ -1,5 +1,5 @@
 {
-  globalOpts = {
+  opts = {
     # Absolute line number gutter
     number = true;
 
