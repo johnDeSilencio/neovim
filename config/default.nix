@@ -21,6 +21,7 @@
     ./plugins/icons.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
+    ./plugins/mini-map.nix
     ./plugins/neotree.nix
     ./plugins/startup/default.nix
     ./plugins/telescope.nix
