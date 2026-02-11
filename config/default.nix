@@ -32,7 +32,6 @@
     ./plugins/zellij.nix
     ./plugins/zellij-nav.nix
 
-    ./keymappings.nix
     ./options.nix
   ];
 }

@@ -27,4 +27,14 @@
       popup_border_style = "rounded";
     };
   };
+
+  keymaps = [
+    {
+      action = "<cmd>Neotree toggle<cr>";
+      key = "<leader>e";
+      options = {
+        desc = "Toggle Neotree";
+      };
+    }
+  ];
 }

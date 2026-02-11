@@ -48,5 +48,32 @@
     };
   };
 
+  keymaps = [
+    {
+      action = "<cmd>Telescope live_grep<cr>";
+      key = "<leader>fw";
+    }
+    {
+      action = "<cmd>Telescope find_files<cr>";
+      key = "<leader>ff";
+    }
+    {
+      action = "<cmd>Telescope git_commits<cr>";
+      key = "<leader>fg";
+    }
+    {
+      action = "<cmd>Telescope oldfiles<cr>";
+      key = "<leader>fh";
+    }
+    {
+      action = "<cmd>Telescope colorscheme<cr>";
+      key = "<leader>ch";
+    }
+    {
+      action = "<cmd>Telescope man_pages<cr>";
+      key = "<leader>fm";
+    }
+  ];
+
   extraPackages = with pkgs; [ ripgrep ];
 }

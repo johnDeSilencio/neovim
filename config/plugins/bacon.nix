@@ -11,4 +11,15 @@
       };
     };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = ",";
+      action = "<cmd>BaconLoad<CR><cmd>w<CR><cmd>BaconNext<CR>";
+      options = {
+        desc = "Load bacon locations file and move to the next location";
+      };
+    }
+  ];
 }
