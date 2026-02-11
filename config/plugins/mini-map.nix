@@ -4,6 +4,12 @@
       enable = true;
 
       settings = {
+        integrations = {
+          "__unkeyed-1.builtin_search".__raw = "require('mini.map').gen_integration.builtin_search()";
+          "__unkeyed-2.gitsigns".__raw = "require('mini.map').gen_integration.gitsigns()";
+          "__unkeyed-3.diagnostic".__raw = "require('mini.map').gen_integration.diagnostic()";
+        };
+
         window = {
           show_integration_count = true;
           side = "right";
