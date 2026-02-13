@@ -23,6 +23,7 @@
     ./plugins/lualine.nix
     ./plugins/mini-map.nix
     ./plugins/neotree.nix
+    ./plugins/notify.nix
     ./plugins/startup/default.nix
     ./plugins/telescope.nix
     ./plugins/transparent.nix
