@@ -199,7 +199,6 @@
     # Nix
     nil
 
-    node2nix
     nodePackages.vscode-json-languageserver
     nodePackages.bash-language-server
     tailwindcss-language-server
