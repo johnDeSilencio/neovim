@@ -199,8 +199,6 @@
     # Nix
     nil
 
-    nodePackages.vscode-json-languageserver
-    nodePackages.bash-language-server
     tailwindcss-language-server
 
     # Language server for typst
