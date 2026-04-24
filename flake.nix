@@ -7,7 +7,8 @@
     };
 
     nixpkgs-unstable = {
-      url = "github:NixOS/nixpkgs/nixos-unstable";
+      # TODO: Lock on to this very specific commit of nixpkgs until vim-utils fixed
+      url = "github:NixOS/nixpkgs/b5162ed33d8b788488946138120a7e80861df3a8";
     };
 
     tree-sitter-rstml = {
@@ -44,7 +45,7 @@
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              nixpkgs = import inputs.nixpkgs {
+              nixpkgs = import inputs.nixpkgs-unstable {
                 inherit system;
               };
             };
