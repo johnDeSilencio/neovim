@@ -146,14 +146,14 @@
   extraConfigLua = ''
     local _border = "rounded"
 
-    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-        vim.lsp.handlers.hover, {
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.buf.hover(
+        {
             border = _border
         }
     )
 
-    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
-        vim.lsp.handlers.signature_help, {
+    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.buf.signature_help(
+        {
             border = _border
         }
     )
