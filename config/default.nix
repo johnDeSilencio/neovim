@@ -17,7 +17,6 @@
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/hardtime.nix
-    ./plugins/highlight-colors.nix
     ./plugins/icons.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
@@ -27,12 +26,9 @@
     ./plugins/pomodoro.nix
     ./plugins/startup/default.nix
     ./plugins/telescope.nix
-    ./plugins/transparent.nix
     ./plugins/treesitter.nix
     ./plugins/ts-autotag.nix
     ./plugins/which-key.nix
-    ./plugins/zellij.nix
-    ./plugins/zellij-nav.nix
 
     ./options.nix
   ];

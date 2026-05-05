@@ -1,7 +1,0 @@
-{
-  plugins = {
-    zellij = {
-      enable = true;
-    };
-  };
-}
