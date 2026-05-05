@@ -7,8 +7,7 @@
     };
 
     nixpkgs-unstable = {
-      # TODO: Lock on to this very specific commit of nixpkgs until vim-utils fixed
-      url = "github:NixOS/nixpkgs/b5162ed33d8b788488946138120a7e80861df3a8";
+      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
 
     tree-sitter-rstml = {
