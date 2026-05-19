@@ -21,6 +21,7 @@
           rust = [ "leptosfmt" ];
           typst = [ "typstyle" ];
           markdown = [ "dprint" ];
+          nu = [ "nufmt" ];
           toml = [ "tombi" ];
         };
 
@@ -45,6 +46,9 @@
 
     # For Nix
     nixfmt
+
+    # For Nushell
+    nufmt
 
     # For formatting Rust code
     rustfmt
