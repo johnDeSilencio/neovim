@@ -35,6 +35,11 @@
           enable = true;
         };
 
+        # Nushell
+        nushell = {
+          enable = true;
+        };
+
         # JavaScript / TypeScript
         ts_ls = {
           enable = true;
