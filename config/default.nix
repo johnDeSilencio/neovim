@@ -25,6 +25,7 @@
     ./plugins/pomodoro.nix
     ./plugins/startup/default.nix
     ./plugins/telescope.nix
+    ./plugins/transparent.nix
     ./plugins/treesitter.nix
     ./plugins/ts-autotag.nix
     ./plugins/which-key.nix
