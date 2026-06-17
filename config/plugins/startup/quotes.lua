@@ -104,4 +104,3 @@ quotes = {
 		"- Daniel J. Bernstein",
 	},
 }
-
