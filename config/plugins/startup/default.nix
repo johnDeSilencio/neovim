@@ -62,7 +62,7 @@
             [
               "󰍉 Find Word"
               "Telescope live_grep"
-              "<leader>lg"
+              "<leader>fw"
             ]
             [
               " Recent Files"
