@@ -23,6 +23,7 @@
     ./plugins/neotree.nix
     ./plugins/notify.nix
     ./plugins/pomodoro.nix
+    ./plugins/showkeys.nix
     ./plugins/startup/default.nix
     ./plugins/telescope.nix
     ./plugins/transparent.nix
