@@ -17,8 +17,6 @@
 
     nixvim = {
       url = "github:nix-community/nixvim";
-      # TODO: Follow stable once Nixvim is fixed on stable
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     flake-parts = {
