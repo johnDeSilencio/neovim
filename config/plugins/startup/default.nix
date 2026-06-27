@@ -75,11 +75,6 @@
               "<leader>fb"
             ]
             [
-              " Colorschemes"
-              "Telescope colorscheme"
-              "<leader>cs"
-            ]
-            [
               " New File"
               "lua require'startup'.new_file()"
               "<leader>nf"
