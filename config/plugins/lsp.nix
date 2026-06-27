@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -180,41 +181,53 @@
     end;
   '';
 
-  extraPackages = with pkgs; [
-    # For watching files and running jobs
-    bacon
+  extraPackages =
+    with pkgs;
+    let
+      cucumber-language-server = inputs.cucumber-language-server.packages.x86_64-linux.default;
+    in
+    [
+      # For watching files and running jobs
+      bacon
+      bash-language-server
+      cucumber-language-server
+      dockerfile-language-server
 
-    dockerfile-language-server
+      # For debugging
+      gdb
 
-    # For debugging
-    gdb
+      gopls
+      golangci-lint-langserver
 
-    gopls
-    golangci-lint-langserver
+      # For grammar and spell checking
+      harper
 
-    # For grammar and spell checking
-    harper
+      leptosfmt
+      lua-language-server
+      markdown-oxide
 
-    lua-language-server
-    markdown-oxide
+      # Markdown
+      marksman
 
-    # Markdown
-    marksman
+      # Nix
+      nil
+      nixfmt
 
-    # Nix
-    nil
+      stylua
+      tailwindcss-language-server
 
-    tailwindcss-language-server
+      # Language server for typst
+      tinymist
+      tree-sitter
 
-    # Language server for typst
-    tinymist
-    tree-sitter
+      # JavaScript and TypeScript
+      typescript-language-server
+      typescript
 
-    # JavaScript and TypeScript
-    typescript-language-server
-    typescript
+      # Formatter for typst
+      typstyle
 
-    vscode-langservers-extracted
-    yaml-language-server
-  ];
+      vscode-langservers-extracted
+      yaml-language-server
+    ];
 }

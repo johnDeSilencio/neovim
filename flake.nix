@@ -19,6 +19,11 @@
       url = "github:nix-community/nixvim";
     };
 
+    cucumber-language-server = {
+      url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
     };
@@ -42,6 +47,8 @@
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
+              inherit inputs;
+
               nixpkgs = import inputs.nixpkgs-unstable {
                 inherit system;
               };
