@@ -120,27 +120,27 @@
       keymaps = {
         silent = true;
         lspBuf = {
-          gd = {
+          "<leader>ld" = {
             action = "definition";
             desc = "Goto Definition";
           };
-          gr = {
+          "<leader>lR" = {
             action = "references";
             desc = "Goto References";
           };
-          gD = {
+          "<leader>lD" = {
             action = "declaration";
             desc = "Goto Declaration";
           };
-          gI = {
+          "<leader>lI" = {
             action = "implementation";
             desc = "Goto Implementation";
           };
-          gT = {
+          "<leader>lT" = {
             action = "type_definition";
             desc = "Type Definition";
           };
-          "<leader>cr" = {
+          "<leader>lr" = {
             action = "rename";
             desc = "Rename Identifier";
           };
