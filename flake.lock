@@ -1,5 +1,26 @@
 {
   "nodes": {
+    "cucumber-language-server": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1740631961,
+        "narHash": "sha256-wmXrjFRG4yWHwscjJmR43CE7Y26OhYyMQne1Sz5M1Cw=",
+        "owner": "johnDeSilencio",
+        "repo": "language-server",
+        "rev": "dd7606c12d1ae49b3e892eb5e622e568edb16a37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnDeSilencio",
+        "ref": "chore/update-tree-sitter",
+        "repo": "language-server",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -86,12 +107,26 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1781607440,
+        "narHash": "sha256-rxO+uc/KFbSJp+pgyXRuAX6QlG9hJdnt0BXpEQRXY+U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixvim": {
       "inputs": {
         "flake-parts": "flake-parts_2",
-        "nixpkgs": [
-          "nixpkgs-unstable"
-        ],
+        "nixpkgs": "nixpkgs_2",
         "systems": "systems"
       },
       "locked": {
@@ -110,6 +145,7 @@
     },
     "root": {
       "inputs": {
+        "cucumber-language-server": "cucumber-language-server",
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
