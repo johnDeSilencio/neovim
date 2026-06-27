@@ -29,6 +29,7 @@
     ./plugins/transparent.nix
     ./plugins/treesitter.nix
     ./plugins/ts-autotag.nix
+    ./plugins/undotree.nix
     ./plugins/which-key.nix
 
     ./options.nix
