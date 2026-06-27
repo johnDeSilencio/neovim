@@ -24,7 +24,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>mm";
+      key = "<leader>tm";
       action.__raw = ''
         function()
           require('mini.map').toggle()
