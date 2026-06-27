@@ -31,7 +31,7 @@
   keymaps = [
     {
       action = "<cmd>Neotree toggle<cr>";
-      key = "<leader>e";
+      key = "<leader>te";
       options = {
         desc = "Toggle Neotree";
       };
