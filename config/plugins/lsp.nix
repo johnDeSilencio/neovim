@@ -149,6 +149,31 @@
     };
   };
 
+  keymaps = [
+    {
+      key = "<leader>lk";
+      action = lib.nixvim.mkRaw ''
+        function()
+          vim.diagnostic.jump({ count=-1, float=true })
+        end
+      '';
+      options = {
+        desc = "Move to previous diagnostic";
+      };
+    }
+    {
+      key = "<leader>lj";
+      action = lib.nixvim.mkRaw ''
+        function()
+          vim.diagnostic.jump({ count=1, float=true })
+        end
+      '';
+      options = {
+        desc = "Move to next diagnostic";
+      };
+    }
+  ];
+
   extraConfigLua = ''
     local _border = "rounded"
 
