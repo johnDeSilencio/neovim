@@ -120,6 +120,10 @@
       keymaps = {
         silent = true;
         lspBuf = {
+          "<leader>la" = {
+            action = "code_action";
+            desc = "Select a code action";
+          };
           "<leader>ld" = {
             action = "definition";
             desc = "Goto Definition";
@@ -136,9 +140,9 @@
             action = "implementation";
             desc = "Goto Implementation";
           };
-          "<leader>lT" = {
-            action = "type_definition";
-            desc = "Type Definition";
+          "<leader>lh" = {
+            action = "hover";
+            desc = "Hover over symbol";
           };
           "<leader>lr" = {
             action = "rename";
