@@ -128,25 +128,25 @@
             action = "definition";
             desc = "Goto Definition";
           };
-          "<leader>lR" = {
-            action = "references";
-            desc = "Goto References";
-          };
           "<leader>lD" = {
             action = "declaration";
             desc = "Goto Declaration";
-          };
-          "<leader>lI" = {
-            action = "implementation";
-            desc = "Goto Implementation";
           };
           "<leader>lh" = {
             action = "hover";
             desc = "Hover over symbol";
           };
+          "<leader>li" = {
+            action = "implementation";
+            desc = "Goto Implementation";
+          };
           "<leader>lr" = {
             action = "rename";
             desc = "Rename Identifier";
+          };
+          "<leader>lR" = {
+            action = "references";
+            desc = "Goto References";
           };
         };
       };
