@@ -11,6 +11,10 @@
         fzf-native = {
           enable = true;
         };
+
+        ui-select = {
+          enable = true;
+        };
       };
 
       settings = {
@@ -74,6 +78,23 @@
       key = "<leader>fm";
     }
   ];
+
+  extraConfigLua = ''
+    require("telescope").setup({
+        extensions = {
+            ["ui-select"] = {
+                require("telescope.themes").get_dropdown({
+                    border = true,
+                    layout_config = {
+                        width = 0.5,
+                        height = 0.3,
+                        prompt_position = "top",
+                    },
+                }),
+            },
+        },
+    })
+  '';
 
   extraPackages = with pkgs; [ ripgrep ];
 }
