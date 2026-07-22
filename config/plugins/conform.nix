@@ -19,6 +19,7 @@
         formatters_by_ft = {
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
+          python = [ "ruff_format" ];
           rust = [ "leptosfmt" ];
           typst = [ "typstyle" ];
           markdown = [ "dprint" ];
@@ -50,6 +51,9 @@
 
     # For Nushell
     nufmt
+
+    # For Python
+    ruff
 
     # For formatting Rust code
     rustfmt

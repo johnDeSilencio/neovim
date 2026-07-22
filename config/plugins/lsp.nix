@@ -81,6 +81,11 @@
             };
         };
 
+        # Python
+        ruff = {
+          enable = true;
+        };
+
         # Rust
         rust_analyzer = {
           enable = true;
@@ -112,7 +117,13 @@
           enable = true;
         };
 
+        # TOML
         tombi = {
+          enable = true;
+        };
+
+        # Python
+        ty = {
           enable = true;
         };
       };
@@ -242,12 +253,18 @@
       nil
       nixfmt
 
+      # Python
+      ruff
+
       stylua
       tailwindcss-language-server
 
       # Language server for typst
       tinymist
       tree-sitter
+
+      # Python
+      ty
 
       # JavaScript and TypeScript
       typescript-language-server
