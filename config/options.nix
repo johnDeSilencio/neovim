@@ -9,6 +9,9 @@
     # Always show the sign column
     signcolumn = "yes:2";
 
+    # Horizontal rulers
+    colorcolumn = "80,100,120";
+
     # Enable 24-bit RGB color in the TUI
     termguicolors = true;
 
