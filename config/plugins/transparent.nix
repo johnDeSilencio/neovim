@@ -1,5 +1,4 @@
 {
-  # TODO: Uncomment when newest transparent-nvim plugin is in nixpkgs
   plugins = {
     transparent = {
       enable = true;
