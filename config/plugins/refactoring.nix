@@ -1,7 +1,0 @@
-{
-  plugins = {
-    refactoring = {
-      enable = true;
-    };
-  };
-}
