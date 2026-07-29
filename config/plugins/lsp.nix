@@ -117,12 +117,10 @@
           enable = true;
         };
 
-        # TOML
         tombi = {
           enable = true;
         };
 
-        # Python
         ty = {
           enable = true;
         };
@@ -132,6 +130,10 @@
         silent = true;
         lspBuf = {
           "<leader>la" = {
+            mode = [
+              "n"
+              "v"
+            ];
             action = "code_action";
             desc = "Select a code action";
           };
