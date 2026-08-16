@@ -22,7 +22,7 @@
           python = [ "ruff_format" ];
           rust = [ "leptosfmt" ];
           typst = [ "typstyle" ];
-          markdown = [ "dprint" ];
+          markdown = [ "rumdl" ];
           nu = [ "nufmt" ];
           toml = [ "tombi" ];
         };
@@ -41,8 +41,6 @@
   };
 
   extraPackages = with pkgs; [
-    dprint
-
     # For the Leptos view! {} macro
     leptosfmt
 
@@ -54,6 +52,9 @@
 
     # For Python
     ruff
+
+    # For Markdown
+    rumdl
 
     # For formatting Rust code
     rustfmt
