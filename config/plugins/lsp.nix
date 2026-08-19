@@ -99,20 +99,26 @@
           settings.settings = {
             "harper-ls" = {
               linters = {
-                boring_words = true;
-                linking_verbse = true;
-                # Lots of false positives with code comments
-                sentence_capitalization = false;
-                spell_check = false;
+                spell_check = true;
+                spelled_numbers = true;
+                an_a = true;
+                sentence_capitalization = true;
+                unclosed_quotes = true;
+                wrong_apostrophe = true;
+                long_sentence = true;
+                repeated_words = true;
+                spaces = true;
+                correct_number_suffix = true;
               };
               codeActions = {
                 forceStable = true;
               };
+              dialect = "American";
             };
           };
         };
 
-        # TailwindCSS
+        # Tailwind CSS
         tailwindcss = {
           enable = true;
         };
@@ -261,7 +267,7 @@
       stylua
       tailwindcss-language-server
 
-      # Language server for typst
+      # Language server for Typst
       tinymist
       tree-sitter
 
@@ -272,7 +278,7 @@
       typescript-language-server
       typescript
 
-      # Formatter for typst
+      # Formatter for Typst
       typstyle
 
       vscode-langservers-extracted
